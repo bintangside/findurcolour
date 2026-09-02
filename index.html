@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Glow Up! — Makeup Game</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sparkles"></div>
+<header><div class="logo">💄 <span>Glow Up!</span></div><div><button id="musicBtn">🔇</button><button id="resetBtn">↻ Reset</button></div></header>
+<main>
+<section class="hero"><div><p>✨ MAKEUP STUDIO ✨</p><h1>Let's make<br><span>you glow!</span> 💕</h1><div class="sub">Pilih makeup favoritmu, mix & match, lalu bikin look yang super cute!</div></div><div class="sticker">🎀<small>glow<br>time!</small></div></section>
+<section class="game">
+<div class="preview">
+<div class="score">✨ <b id="score">0</b> points</div>
+<div class="stage"><div class="halo"></div><div class="hair back"></div><div class="face">
+<div class="ear left"></div><div class="ear right"></div><div class="blush left"></div><div class="blush right"></div>
+<div class="eye left"><i></i></div><div class="eye right"><i></i></div><div class="liner left"></div><div class="liner right"></div>
+<div class="brow left"></div><div class="brow right"></div><div class="nose"></div><div class="lips"></div><div class="highlight"></div><div class="hair front"></div>
+</div><div class="neck"></div><div class="outfit">🎀</div></div>
+<div class="look" id="look">Sweet Starter</div><small>Klik item makeup untuk mengaplikasikannya ✨</small>
+</div>
+<div class="controls"><div class="tabs">
+<button class="tab active" data-tab="face">🌸 Face</button><button class="tab" data-tab="eyes">👁️ Eyes</button><button class="tab" data-tab="lips">💋 Lips</button><button class="tab" data-tab="extras">✨ Extras</button>
+</div>
+<div id="face" class="panel active"><h2>Base & Blush</h2><div class="items">
+<button class="makeup" data-type="blush" data-color="#ff9fc7" data-points="10">🌷<br>Pink Blush</button><button class="makeup" data-type="blush" data-color="#f58f9e" data-points="12">🍓<br>Berry Blush</button><button class="makeup" data-type="blush" data-color="#f5b37b" data-points="14">🍑<br>Peach Blush</button><button class="makeup" data-type="highlight" data-color="#ffe5a6" data-points="15">✨<br>Golden Glow</button>
+</div></div>
+<div id="eyes" class="panel"><h2>Eye Candy</h2><div class="items">
+<button class="makeup" data-type="liner" data-color="#9c6cff" data-points="15">💜<br>Lavender Liner</button><button class="makeup" data-type="liner" data-color="#ff67b3" data-points="18">🎀<br>Pink Liner</button><button class="makeup" data-type="shadow" data-color="#c39cff" data-points="16">🪻<br>Dreamy Purple</button><button class="makeup" data-type="shadow" data-color="#ff9ecf" data-points="17">🌸<br>Cotton Candy</button>
+</div></div>
+<div id="lips" class="panel"><h2>Lip Gloss Bar</h2><div class="items">
+<button class="makeup" data-type="lips" data-color="#ff6f9f" data-points="14">💗<br>Bubblegum</button><button class="makeup" data-type="lips" data-color="#d94b86" data-points="18">🍒<br>Cherry Pop</button><button class="makeup" data-type="lips" data-color="#c77be8" data-points="20">🍇<br>Grape Shine</button><button class="makeup" data-type="lips" data-color="#ffb1c9" data-points="12">🧁<br>Baby Pink</button>
+</div></div>
+<div id="extras" class="panel"><h2>Finishing Touch ✨</h2><div class="items">
+<button class="makeup" data-type="accessory" data-value="🎀" data-points="20">🎀<br>Big Bow</button><button class="makeup" data-type="accessory" data-value="🌸" data-points="18">🌸<br>Flower</button><button class="makeup" data-type="accessory" data-value="👑" data-points="25">👑<br>Princess Crown</button><button class="makeup" data-type="accessory" data-value="🦋" data-points="22">🦋<br>Butterfly</button>
+</div></div>
+<button id="finish" class="finish">✨ FINISH MY LOOK ✨</button>
+</div></section>
+<section class="tips"><div>💗 <b>Mix & Match</b><small>Try different colors!</small></div><div>⭐ <b>Earn Points</b><small>More glam = more points!</small></div><div>🎀 <b>Have Fun</b><small>There are no wrong looks!</small></div></section>
+</main>
+<div id="modal" class="modal"><div class="modalbox"><div>✨ 🎀 💕 🌸 ✨</div><h2>LOOK COMPLETE! 💄</h2><div class="result">💗</div><p id="resultText"></p><strong class="final"><span id="final">0</span> points</strong><button id="close" class="finish">YAY! 💕</button></div></div>
+<script src="script.js"></script>
+</body></html>
